@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+
+task default: %w(test)
+
+task :test do
+  ruby "-Ilib -e 'ARGV.each { |f| require f }' ./test/test*.rb"
+end

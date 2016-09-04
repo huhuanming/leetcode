@@ -1,0 +1,16 @@
+{
+  "name": "LeetCode-Nodejs",
+  "version": "0.1.0",
+  "author": "Zach Hu",
+  "keywords": [
+    "node.js",
+    "leetcode"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha"
+  },
+  "dependencies": {
+    "mocha": "^2.5.3"
+  }
+}
