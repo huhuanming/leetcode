@@ -19,7 +19,7 @@ leetcode is a project including multiple programming languages for [LeetCode](ht
 | Node.js | 5.11.0 | YES | Coming Soon |
 | Python | 2.7.10 | YES | Coming Soon |
 | Ruby | 2.3.0 | YES | YES |
-| Swift | Coming Soon | Coming Soon |Coming Soon |
+| Swift | Apple Swift version 2.2 | YES |Coming Soon |
 | Golang | Coming Soon | Coming Soon |Coming Soon |
 
 ## How To Get Started
