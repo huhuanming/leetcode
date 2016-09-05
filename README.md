@@ -4,7 +4,7 @@ leetcode is a project including multiple programming languages for [LeetCode](ht
 
 
 ## TODO
-- [ ] Support Swift and Golang
+- [x] Support Swift and Golang
 - [ ] Add Detail Solution in comment
 - [ ] Add ci in GitHub
 - [ ] Add Coding Style Checker before test
@@ -20,7 +20,7 @@ leetcode is a project including multiple programming languages for [LeetCode](ht
 | Python | 2.7.10 | YES | Coming Soon |
 | Ruby | 2.3.0 | YES | YES |
 | Swift | Apple Swift version 2.2 | YES |Coming Soon |
-| Golang | Coming Soon | Coming Soon |Coming Soon |
+| Golang | 1.6.2 | YES |Coming Soon |
 
 ## How To Get Started
 ###C
@@ -65,10 +65,14 @@ rake test
 ###Swift
 
 
-Coming Soon
+Open by Xcode 7.1 and build it.
 
 
 ###Golang
 
 
-Coming Soon
+Run the test by this.
+
+```
+go test
+```
