@@ -1,10 +1,8 @@
-//
-//  reverseString.c
-//  LeetCode
-//
-//  Created by 胡 桓铭 on 16/7/29.
-//  Copyright © 2016年 胡 桓铭. All rights reserved.
-//
+// 344. Reverse String
+// Write a function that takes a string as input and returns the string reversed.
+
+// Example:
+// Given s = "hello", return "olleh".
 
 #include "reverseString.h"
 

@@ -5,7 +5,7 @@ leetcode is a project including multiple programming languages for [LeetCode](ht
 
 ## TODO
 - [x] Support Swift and Golang
-- [ ] Add Detail Solution in comment
+- [x] Add Detail Solution in comment
 - [ ] Add ci in GitHub
 - [ ] Add Coding Style Checker before test
 - [ ] Solve All solution
@@ -75,4 +75,23 @@ Run the test by this.
 
 ```
 go test
+```
+
+## Find A Solution
+
+If you want to get a solution named 'Reverse String', you can do it in root dictionary.
+
+```
+grep -nr "Reverse String" .
+```
+
+Just get all!
+```
+./C/LeetCode/LeetCode/reverseString.c:1:// 344. Reverse String
+./Golang/reverse_string.go:1:// 344. Reverse String
+./Java/LeetCode/src/com/leet_code/solution/ReverseString.java:1:// 344. Reverse String
+./Nodejs/reverse_string.js:1:// 344. Reverse String
+./Python/reverse_string.py:1:# 344. Reverse String
+./Ruby/reverse_string.rb:1:# 344. Reverse String
+./Swift/LeetCode/LeetCode/ReverseString.swift:1:// 344. Reverse String
 ```
