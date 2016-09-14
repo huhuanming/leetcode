@@ -21,21 +21,18 @@ package solutions
 
 import (
 	"strings"
-	//"sort"
-	"bytes"
 )
 
+func swap(str1, str2 *string) {
+	*str1, *str2 = *str2, *str1
+}
+
 func ReverseWordsInAString(s string) string {
-	split := ' '
-	strs := strings.Split(s, split)
-	print("\n")
-
-	var buffer bytes.Buffer
-	for _, str :=range strs {
-		buffer.WriteString(str)
+	strs := strings.Fields(s)
+	length := len(strs)
+	for i := 0; i < length/2; {
+		swap(&strs[i], &strs[length-1-i])
+		i++
 	}
-
-	print(strs)
-	//sort.Reverse(slice)
-	return s
+	return strings.Join(strs, " ")
 }
