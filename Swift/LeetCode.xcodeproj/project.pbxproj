@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85222B231D8B158B00635545 /* ReverseWordsInAString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85222B221D8B158B00635545 /* ReverseWordsInAString.swift */; };
+		85222B251D8B15DA00635545 /* ReverseWordsInAStringTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85222B241D8B15DA00635545 /* ReverseWordsInAStringTests.swift */; };
 		858B53671D7D093600B807B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858B53661D7D093600B807B1 /* AppDelegate.swift */; };
 		858B53691D7D093600B807B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 858B53681D7D093600B807B1 /* ViewController.swift */; };
 		858B536B1D7D093600B807B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 858B536A1D7D093600B807B1 /* Assets.xcassets */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		85222B221D8B158B00635545 /* ReverseWordsInAString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseWordsInAString.swift; sourceTree = "<group>"; };
+		85222B241D8B15DA00635545 /* ReverseWordsInAStringTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReverseWordsInAStringTests.swift; sourceTree = "<group>"; };
 		858B53631D7D093600B807B1 /* LeetCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LeetCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		858B53661D7D093600B807B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		858B53681D7D093600B807B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -94,6 +98,7 @@
 			children = (
 				858B53781D7D093700B807B1 /* LeetCodeTests.swift */,
 				858B53861D7D0A9F00B807B1 /* ReverseStringTests.swift */,
+				85222B241D8B15DA00635545 /* ReverseWordsInAStringTests.swift */,
 				858B537A1D7D093700B807B1 /* Info.plist */,
 			);
 			path = LeetCodeTests;
@@ -103,6 +108,7 @@
 			isa = PBXGroup;
 			children = (
 				858B53841D7D09C400B807B1 /* ReverseString.swift */,
+				85222B221D8B158B00635545 /* ReverseWordsInAString.swift */,
 			);
 			name = Sources;
 			sourceTree = "<group>";
@@ -209,6 +215,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				85222B231D8B158B00635545 /* ReverseWordsInAString.swift in Sources */,
 				858B53691D7D093600B807B1 /* ViewController.swift in Sources */,
 				858B53671D7D093600B807B1 /* AppDelegate.swift in Sources */,
 				858B53851D7D09C400B807B1 /* ReverseString.swift in Sources */,
@@ -220,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				858B53791D7D093700B807B1 /* LeetCodeTests.swift in Sources */,
+				85222B251D8B15DA00635545 /* ReverseWordsInAStringTests.swift in Sources */,
 				858B53871D7D0A9F00B807B1 /* ReverseStringTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
