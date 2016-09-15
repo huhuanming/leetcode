@@ -19,13 +19,29 @@
 
 #include "reverseWordsInAString.h"
 
-char* reverseWords(char* s) {
-    char* t = 0;
-    size_t len = strlen(s);
-    t = malloc(sizeof(char*) * (1 + len));
-    for (int i = 0; i < len; i++) {
-        *(t + i) = *(s + len - i - 1);
+void reverseWords(char *s) {
+    int i = 0;
+    char **strs;
+    char *destStr;
+    char *p;
+    destStr = malloc(sizeof(char*) * (strlen(s) + 1));
+    strs = malloc(sizeof(char**) * (strlen(s)/2));
+    for (p = strtok(s, " "); p; p = strtok(NULL, " "))
+    {
+        strs[i] = p;
+        i++;
     }
-    *(t + len) = '\0';
-    return t;
+    
+    *destStr = '\0';
+    
+    for (i = i - 1; i > -1 ; i--) {
+        strcat(destStr, strs[i]);
+        if (i > 0) {
+            strcat(destStr, " ");
+        }
+        if (i == 0) {
+           strcat(destStr, "\0");
+        }
+    }
+    strcpy(s, destStr);
 }

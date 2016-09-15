@@ -15,4 +15,4 @@
 
 #endif /* reverseWordsInAString_h */
 
-char* reverseWords(char* s);
+void reverseWords(char *s);

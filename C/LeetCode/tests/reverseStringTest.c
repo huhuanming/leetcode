@@ -7,9 +7,6 @@
 //
 
 #include "reverseStringTest.h"
-#include "greatest.h"
-#include "reverseString.h"
-
 
 TEST reverseStringEuqalGivenString(void) {
     ASSERT_STR_EQ("!olleh", reverseString("hello!"));

@@ -10,6 +10,8 @@
 #define reverseStringTest_h
 
 #include <stdio.h>
+#include "greatest.h"
+#include "reverseString.h"
 
 #endif /* reverseStringTest_h */
 

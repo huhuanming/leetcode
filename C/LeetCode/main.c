@@ -11,14 +11,17 @@
 #include <dirent.h>
 #include <assert.h>
 #include "greatest.h"
-#include "reverseString.h"
-#include "reverseStringTest.h"
+
+//unit test files
+#include "tests/reverseStringTest.h"
+#include "tests/reverseWordsInAStringTest.h"
 
 
 GREATEST_MAIN_DEFS();
 
 void runSuit(void){
     RUN_SUITE(reverseStringTestSuite);
+    RUN_SUITE(reverseWordsInAStringTestSuite);
 }
 
 int main(int argc, const char * argv[]) {

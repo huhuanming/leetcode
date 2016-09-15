@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		85222B171D8AB6AD00635545 /* reverseStringTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 85222B151D8AB6AD00635545 /* reverseStringTest.c */; };
+		85222B211D8ABEFE00635545 /* reverseWordsInAStringTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 85222B1F1D8ABEFE00635545 /* reverseWordsInAStringTest.c */; };
 		8549B5BE1D89C7FB0036AF9F /* reverseString.c in Sources */ = {isa = PBXBuildFile; fileRef = 8549B5BA1D89C7FB0036AF9F /* reverseString.c */; };
 		8549B5BF1D89C7FB0036AF9F /* reverseWordsInAString.c in Sources */ = {isa = PBXBuildFile; fileRef = 8549B5BC1D89C7FB0036AF9F /* reverseWordsInAString.c */; };
 		85B67EB41D89C72000FE7913 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 85B67EB31D89C72000FE7913 /* main.c */; };
@@ -30,6 +31,8 @@
 		85222B161D8AB6AD00635545 /* reverseStringTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = reverseStringTest.h; path = LeetCode/tests/reverseStringTest.h; sourceTree = "<group>"; };
 		85222B1A1D8AB6E600635545 /* greenest */ = {isa = PBXFileReference; lastKnownFileType = text; path = greenest; sourceTree = "<group>"; };
 		85222B1B1D8AB6E600635545 /* greatest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = greatest.h; sourceTree = "<group>"; };
+		85222B1F1D8ABEFE00635545 /* reverseWordsInAStringTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = reverseWordsInAStringTest.c; path = LeetCode/tests/reverseWordsInAStringTest.c; sourceTree = "<group>"; };
+		85222B201D8ABEFE00635545 /* reverseWordsInAStringTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = reverseWordsInAStringTest.h; path = LeetCode/tests/reverseWordsInAStringTest.h; sourceTree = "<group>"; };
 		8549B5BA1D89C7FB0036AF9F /* reverseString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reverseString.c; sourceTree = "<group>"; };
 		8549B5BB1D89C7FB0036AF9F /* reverseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reverseString.h; sourceTree = "<group>"; };
 		8549B5BC1D89C7FB0036AF9F /* reverseWordsInAString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reverseWordsInAString.c; sourceTree = "<group>"; };
@@ -54,6 +57,8 @@
 			children = (
 				85222B151D8AB6AD00635545 /* reverseStringTest.c */,
 				85222B161D8AB6AD00635545 /* reverseStringTest.h */,
+				85222B1F1D8ABEFE00635545 /* reverseWordsInAStringTest.c */,
+				85222B201D8ABEFE00635545 /* reverseWordsInAStringTest.h */,
 			);
 			name = tests;
 			path = ..;
@@ -167,6 +172,7 @@
 				85B67EB41D89C72000FE7913 /* main.c in Sources */,
 				8549B5BE1D89C7FB0036AF9F /* reverseString.c in Sources */,
 				8549B5BF1D89C7FB0036AF9F /* reverseWordsInAString.c in Sources */,
+				85222B211D8ABEFE00635545 /* reverseWordsInAStringTest.c in Sources */,
 				85222B171D8AB6AD00635545 /* reverseStringTest.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -200,14 +206,17 @@
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
+				GCC_CHAR_IS_UNSIGNED_CHAR = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_INPUT_FILETYPE = sourcecode.c.c;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
 				);
+				GCC_REUSE_STRINGS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -247,8 +256,11 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_CHAR_IS_UNSIGNED_CHAR = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_INPUT_FILETYPE = sourcecode.c.c;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_REUSE_STRINGS = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -264,7 +276,14 @@
 		85B67EB81D89C72000FE7913 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 5M34M6CU7U;
+				GCC_CHAR_IS_UNSIGNED_CHAR = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_REUSE_STRINGS = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -272,7 +291,14 @@
 		85B67EB91D89C72000FE7913 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD)";
+				CODE_SIGN_IDENTITY = "Mac Developer";
 				DEVELOPMENT_TEAM = 5M34M6CU7U;
+				GCC_CHAR_IS_UNSIGNED_CHAR = YES;
+				GCC_INSTRUMENT_PROGRAM_FLOW_ARCS = YES;
+				GCC_REUSE_STRINGS = NO;
+				GCC_WARN_ABOUT_MISSING_NEWLINE = YES;
+				GCC_WARN_UNUSED_PARAMETER = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
