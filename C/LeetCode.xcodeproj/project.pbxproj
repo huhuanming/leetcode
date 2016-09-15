@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		85222B171D8AB6AD00635545 /* reverseStringTest.c in Sources */ = {isa = PBXBuildFile; fileRef = 85222B151D8AB6AD00635545 /* reverseStringTest.c */; };
 		8549B5BE1D89C7FB0036AF9F /* reverseString.c in Sources */ = {isa = PBXBuildFile; fileRef = 8549B5BA1D89C7FB0036AF9F /* reverseString.c */; };
 		8549B5BF1D89C7FB0036AF9F /* reverseWordsInAString.c in Sources */ = {isa = PBXBuildFile; fileRef = 8549B5BC1D89C7FB0036AF9F /* reverseWordsInAString.c */; };
 		85B67EB41D89C72000FE7913 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 85B67EB31D89C72000FE7913 /* main.c */; };
@@ -25,6 +26,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		85222B151D8AB6AD00635545 /* reverseStringTest.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = reverseStringTest.c; path = LeetCode/tests/reverseStringTest.c; sourceTree = "<group>"; };
+		85222B161D8AB6AD00635545 /* reverseStringTest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = reverseStringTest.h; path = LeetCode/tests/reverseStringTest.h; sourceTree = "<group>"; };
+		85222B1A1D8AB6E600635545 /* greenest */ = {isa = PBXFileReference; lastKnownFileType = text; path = greenest; sourceTree = "<group>"; };
+		85222B1B1D8AB6E600635545 /* greatest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = greatest.h; sourceTree = "<group>"; };
 		8549B5BA1D89C7FB0036AF9F /* reverseString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reverseString.c; sourceTree = "<group>"; };
 		8549B5BB1D89C7FB0036AF9F /* reverseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = reverseString.h; sourceTree = "<group>"; };
 		8549B5BC1D89C7FB0036AF9F /* reverseWordsInAString.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = reverseWordsInAString.c; sourceTree = "<group>"; };
@@ -44,6 +49,33 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		85222B141D8AB67E00635545 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				85222B151D8AB6AD00635545 /* reverseStringTest.c */,
+				85222B161D8AB6AD00635545 /* reverseStringTest.h */,
+			);
+			name = tests;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		85222B181D8AB6E600635545 /* greatest */ = {
+			isa = PBXGroup;
+			children = (
+				85222B191D8AB6E600635545 /* contrib */,
+				85222B1B1D8AB6E600635545 /* greatest.h */,
+			);
+			path = greatest;
+			sourceTree = "<group>";
+		};
+		85222B191D8AB6E600635545 /* contrib */ = {
+			isa = PBXGroup;
+			children = (
+				85222B1A1D8AB6E600635545 /* greenest */,
+			);
+			path = contrib;
+			sourceTree = "<group>";
+		};
 		85B67EA71D89C72000FE7913 = {
 			isa = PBXGroup;
 			children = (
@@ -63,6 +95,8 @@
 		85B67EB21D89C72000FE7913 /* LeetCode */ = {
 			isa = PBXGroup;
 			children = (
+				85222B181D8AB6E600635545 /* greatest */,
+				85222B141D8AB67E00635545 /* tests */,
 				85B67EB31D89C72000FE7913 /* main.c */,
 				8549B5BA1D89C7FB0036AF9F /* reverseString.c */,
 				8549B5BB1D89C7FB0036AF9F /* reverseString.h */,
@@ -133,6 +167,7 @@
 				85B67EB41D89C72000FE7913 /* main.c in Sources */,
 				8549B5BE1D89C7FB0036AF9F /* reverseString.c in Sources */,
 				8549B5BF1D89C7FB0036AF9F /* reverseWordsInAString.c in Sources */,
+				85222B171D8AB6AD00635545 /* reverseStringTest.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
