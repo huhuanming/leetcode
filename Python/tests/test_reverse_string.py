@@ -1,5 +1,5 @@
 import unittest
-from reverse_string import reverseString
+from reverse_string import Solution
 
 class ReverseString(unittest.TestCase):
     def setUp(self):
@@ -9,4 +9,4 @@ class ReverseString(unittest.TestCase):
         pass
 
     def testReverseString(self):
-        self.assertEqual(reverseString('hello!'), '!olleh')
+        self.assertEqual(Solution().reverseString('hello!'), '!olleh')

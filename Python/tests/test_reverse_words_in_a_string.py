@@ -1,5 +1,5 @@
 import unittest
-from reverse_words_in_a_string import reverseWords
+from reverse_words_in_a_string import Solution
 
 
 class ReverseString(unittest.TestCase):
@@ -18,4 +18,4 @@ class ReverseString(unittest.TestCase):
         ]
 
         for string in strings:
-            self.assertEqual(reverseWords(string), 'blue is sky the')
+            self.assertEqual(Solution().reverseWords(string), 'blue is sky the')
